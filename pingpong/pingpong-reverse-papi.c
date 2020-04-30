@@ -114,9 +114,9 @@ int main(int argc, char* argv[])
 		printf("%ld ", msg_sz);
 		for(i=0;i<NUM_EVENT;++i){
 		    if(i != NUM_EVENT - 1)
-				printf("%.0lf ", global_values[i] / iter);
+				printf("%.0lf ", global_values[i] / iter / 1000.0);
 			else
-				printf("%.0lf", global_values[i] / iter);
+				printf("%.0lf", global_values[i] / iter / 1000.0);
 				
 		}
 		printf("\n");
