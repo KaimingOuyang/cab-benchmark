@@ -69,7 +69,7 @@ int main(int argc, char* argv[])
 	 * outflag = 0 -> message_psize.out
 	 * */
 	const int y = 2;
-	const int x = MB128 / 8 / y / z;
+	const int x = GB1 / 8 / y / z;
 	const int blklen = x;
 	const int stride = x * y;
 	char *data_send = NULL;
